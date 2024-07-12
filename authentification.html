@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <style>
+    
+    body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin:0;
+    }
+    .container {
+    background-color:rgb(230, 189, 219);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    }
+
+    h2 {
+    margin-right: 20px;
+    color: #333;
+    font-size: 24px;
+    }
+
+
+    label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],[type='email'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+
+/* Style pour le bouton de connexion */
+input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ac4569;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style pour le lien de mot de passe oublié */
+.forgot-password {
+    margin-top: 10px;
+    display: block;
+    color:#555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Créer votre compte</h2>
+<div class="container">
+    <form >
+        <label for="fname">Prénom:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Nom:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br>
+        <label for="lname">Adresse e-mail:</label><br>
+        <input type="email" id="email" name="email" value=""><br>
+        <label for="password">Mot de passe:</label><br>
+        <input type="password" id="password" name="password" value=""><br>
+        <label for="lname">Confirmer mot de passe:</label><br>
+        <input type="password" id="password" name="password" value=""><br><br>
+        <input type="submit" value="S'inscrire">
+      </form> 
+      <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+</div>
+
+</body>
+</html>
